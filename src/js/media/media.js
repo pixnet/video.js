@@ -133,15 +133,6 @@ vjs.MediaTechController.prototype.onClick = function(event){
   // will also be triggered with right-clicks, so we need to prevent that
   if (event.button !== 0) return;
 
-  // When controls are disabled a click should not toggle playback because
-  // the click is considered a control
-  if (this.player().controls()) {
-    if (this.player().paused()) {
-      this.player().play();
-    } else {
-      this.player().pause();
-    }
-  }
 };
 
 /**
