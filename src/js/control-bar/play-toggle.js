@@ -24,8 +24,6 @@ vjs.PlayToggle.prototype.buildCSSClass = function(){
 vjs.PlayToggle.prototype.onClick = function(){
   if (this.player_.paused()) {
     this.player_.play();
-  } else {
-    this.player_.pause();
   }
 };
 
